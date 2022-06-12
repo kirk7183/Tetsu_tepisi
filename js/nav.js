@@ -31,7 +31,7 @@ var navBar = `<section class="top-nav">
 </div>
 </section>`;
 
-document.getElementById('navbar').innerHTML = navBar;
+document.getElementById('navbarHTML').innerHTML = navBar;
 
 /* backgroundcolor on current  page */
 

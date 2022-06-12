@@ -20,7 +20,7 @@ h2 {
 html,
 body {
     margin: 0;
-    height: 100%;
+    height: fit-content;
     font-size: 14px;
     max-width: 2000px;
 }
@@ -30,15 +30,24 @@ body {
     box-sizing: border-box;
 }
 
+#navbarHTML {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-bottom: 1px solid gray;
+}
+
 .top-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     /* justify-content: space-between; */
-    background-color: #00BAF0;
-    background: linear-gradient(to left, #f46b45, #eea849);
+    /* background-color: #00BAF0; */
+    /* background: linear-gradient(to right, #000, #0d0d0d); */
+    /* background: rgba(164, 145, 128, 0.37); */
+    background: #DDD6D0;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #FFF;
+    color: #222;
     height: 80px;
     padding: 1em;
 }
@@ -57,7 +66,8 @@ body {
 }
 
 .menu {
-    font-size: 20px;
+    font-size: 1.6rem;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,12 +79,16 @@ body {
 
 a {
     text-decoration: none;
+    color: #857c52;
+    letter-spacing: 1px;
 }
 
-.menu li a:link,
+
+/* .menu li a:link,
 .menu li a:visited {
-    color: #fff;
-}
+    color: #857c52;
+    font-weight: 600;
+} */
 
 .menu li a:active {
     background-color: red;
@@ -83,7 +97,7 @@ a {
 .menu li {
     margin: 0 1rem;
     overflow: hidden;
-    color: #fff;
+    /* color: #fff; */
     /* cursor: pointer; */
 }
 
@@ -210,8 +224,9 @@ a {
 .banner-wrapper3,
 .banner-wrapper4,
 .banner-wrapper5,
-.banner-wrapper6 {
-    width: 60%;
+.banner-wrapper6,
+.banner-wrapper7 {
+    width: 65%;
     padding: 6vw 0;
     margin: 0 auto;
     font-size: 1.7vw;
@@ -222,7 +237,8 @@ span {
 }
 
 .banner-3,
-.banner-5 {
+.banner-5,
+.banner-7 {
     background: rgba(164, 145, 128, 0.37);
 }
 
@@ -409,12 +425,16 @@ div.banner-3 div.middle-3 a p {
 }
 
 .banner-wrapper4 .middle-1 .one {
-    width: 70%;
+    width: 75%;
 }
 
 .banner-wrapper4 .middle-1 .two {
-    width: 20%;
+    width: 15%;
     text-align: center;
+}
+
+.banner-wrapper4 .middle-1 .two img {
+    width: 67%;
 }
 
 .banner-wrapper4 .middle-1 .three {
@@ -477,6 +497,10 @@ div.banner-3 div.middle-3 a p {
     text-align: center;
 }
 
+.middle-ornament img {
+    width: 67%;
+}
+
 
 /* /banner-5 */
 
@@ -501,3 +525,67 @@ div.banner-3 div.middle-3 a p {
 
 
 /* /banner-6 */
+
+
+/* banner-7 */
+
+.banner-7 {
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray;
+}
+
+.banner-wrapper7 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-wrapper7 .left {
+    width: 75%;
+}
+
+.banner-wrapper7 .top {
+    margin-bottom: 5%;
+}
+
+.banner-wrapper7 .top p {
+    display: inline;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #000;
+}
+
+.banner-wrapper7 .bottom p {
+    margin: 0;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.banner-wrapper7 .right {
+    width: 35%
+}
+
+.banner-wrapper7 .right-img {
+    width: 100%;
+}
+
+.banner-wrapper7 .right-img img {
+    width: 100%;
+}
+
+.flexLC {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    gap: 2%;
+    width: 100%;
+    margin: 10px;
+}
+
+.flexLC img {
+    max-width: 40px;
+    width: 7%;
+}
+
+
+/* /banner-7 */
