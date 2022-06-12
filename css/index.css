@@ -1,0 +1,503 @@
+/* @import url(https://fonts.googleapis.com/css?family=Raleway); */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@font-face {
+    font-family: 'Sans Serif Book Medium';
+    src: url('/assets/Fonts/SansSerifBookFLF.ttf') format('truetype');
+}
+
+
+/* font-family: 'Abril Fatface', cursive; */
+
+
+/* Menu */
+
+h2 {
+    vertical-align: center;
+    text-align: center;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    font-size: 14px;
+    max-width: 2000px;
+}
+
+* {
+    font-family: "Sans Serif Book Medium";
+    box-sizing: border-box;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: #00BAF0;
+    background: linear-gradient(to left, #f46b45, #eea849);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FFF;
+    height: 80px;
+    padding: 1em;
+}
+
+.img-wrapper {
+    width: 80px;
+    height: auto;
+}
+
+.img-wrapper img {
+    width: 100%;
+}
+
+.menu-wrapper {
+    width: 100%;
+}
+
+.menu {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu li a:link,
+.menu li a:visited {
+    color: #fff;
+}
+
+.menu li a:active {
+    background-color: red;
+}
+
+.menu li {
+    margin: 0 1rem;
+    overflow: hidden;
+    color: #fff;
+    /* cursor: pointer; */
+}
+
+.menu li:hover {
+    opacity: 0.6;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+    .top-nav {
+        height: 60px;
+    }
+    .top-nav .img-wrapper {
+        width: 60px;
+    }
+    .menu-button-container {
+        display: flex;
+        margin-left: auto;
+    }
+    .menu-wrapper {
+        width: unset;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 60px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu li:hover {
+        opacity: 1;
+    }
+    .menu li a {
+        width: 100%;
+        text-align: center;
+    }
+    #menu-toggle~.menu-wrapper .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked~.menu-wrapper .menu li {
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        z-index: 999;
+    }
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #222;
+    }
+    .menu>li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+}
+
+
+/* /Menu */
+
+
+/* group */
+
+.banner-wrapper2,
+.banner-wrapper3,
+.banner-wrapper4,
+.banner-wrapper5,
+.banner-wrapper6 {
+    width: 60%;
+    padding: 6vw 0;
+    margin: 0 auto;
+    font-size: 1.7vw;
+}
+
+span {
+    color: #857c52;
+}
+
+.banner-3,
+.banner-5 {
+    background: rgba(164, 145, 128, 0.37);
+}
+
+img {
+    vertical-align: bottom;
+}
+
+
+/* /group */
+
+
+/* banner-1 */
+
+.banner-1 {
+    position: relative;
+}
+
+picture {
+    position: relative;
+}
+
+.logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.logo {
+    width: 20%;
+}
+
+.text {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 7vw;
+    color: #fff;
+}
+
+
+/* /banner-1 */
+
+
+/* banner-2, banner-5 */
+
+.banner-wrapper2,
+.banner-wrapper5,
+.banner-wrapper6 {
+    display: flex;
+    justify-content: center;
+    gap: 4vw 7vw;
+}
+
+.banner-wrapper2 .left,
+.banner-wrapper5 .left,
+.banner-wrapper6 .left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.banner-wrapper2 .left .left-1,
+.banner-wrapper5 .left .left-1,
+.banner-wrapper6 .left .left-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.banner-wrapper2 .left-line,
+.banner-wrapper5 .left-line,
+.banner-wrapper6 .left-line {
+    width: 75%;
+    border-bottom: 1px solid #000;
+}
+
+.banner-wrapper2 .right-img,
+.banner-wrapper5 .right-img,
+.banner-wrapper6 .right-img {
+    width: 20%;
+}
+
+.banner-wrapper2 .left .left-1 .right-img img,
+.banner-wrapper5 .left .left-1 .right-img img {
+    width: 100%;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+}
+
+.banner-wrapper2 .left .left-2,
+.banner-wrapper5 .left .left-2,
+.banner-wrapper6 .left .left-2 {
+    padding: 2vw 0 0;
+}
+
+.banner-wrapper2 .left .left-3 a p,
+.banner-wrapper5 .left .left-3 a p,
+.banner-wrapper6 .left .left-3 a p {
+    margin-top: 0;
+}
+
+.banner-wrapper2 .right,
+.banner-wrapper5 .right {
+    width: 90%;
+}
+
+.banner-wrapper2 .right img,
+.banner-wrapper5 .right img,
+.banner-wrapper6 .right img {
+    width: 100%;
+}
+
+
+/* /banner-2, banner-5 */
+
+
+/* banner-3 */
+
+.banner-wrapper3 .middle-1 {
+    text-align: center;
+}
+
+.banner-wrapper3 .middle-1 img {
+    width: 17%;
+}
+
+.banner-wrapper3 .middle-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw 0 0;
+}
+
+.banner-wrapper3 .middle-2 .left,
+.banner-wrapper3 .middle-2 .right {
+    width: 30%;
+    border-bottom: 1px solid #000;
+}
+
+.banner-wrapper3 .middle-2 .middle {
+    width: 40%;
+    padding: 0 10px;
+}
+
+.banner-wrapper3 .middle-2 .middle,
+.banner-wrapper3 .middle-3 {
+    text-align: center;
+}
+
+div.banner-3 div.middle-3 a p {
+    margin-top: 0;
+}
+
+.banner-wrapper3 .middle-4,
+.banner-wrapper3 .middle-4 img {
+    width: 100%;
+}
+
+
+/* /banner-3 */
+
+
+/* banner-4 */
+
+.banner-wrapper4 .middle-1 {
+    display: flex;
+}
+
+.banner-wrapper4 .middle-1 .one,
+.banner-wrapper4 .middle-1 .three {
+    border-bottom: 1px solid #000;
+}
+
+.banner-wrapper4 .middle-1 .one {
+    width: 70%;
+}
+
+.banner-wrapper4 .middle-1 .two {
+    width: 20%;
+    text-align: center;
+}
+
+.banner-wrapper4 .middle-1 .three {
+    width: 10%;
+}
+
+.banner-wrapper4 .middle-2,
+.banner-wrapper4 .middle-3 {
+    text-align: right;
+}
+
+.banner-wrapper4 .middle-2 {
+    padding: 2vw 0 0;
+}
+
+.banner-wrapper4 .middle-2 :first-child {
+    margin-bottom: 0;
+}
+
+.banner-wrapper4 .middle-2 :last-child {
+    margin: 0;
+}
+
+.banner-wrapper4 .middle-3 p {
+    margin-bottom: 0;
+}
+
+
+/* /banner-4 */
+
+
+/* banner-5 */
+
+.banner-wrapper5 {
+    flex-wrap: wrap;
+}
+
+.full-width {
+    width: 100%;
+    display: flex;
+}
+
+.banner-wrapper5 .left {
+    width: 50%
+}
+
+.banner-wrapper5 .right {
+    width: 38%;
+}
+
+.left-line2,
+.right-line2 {
+    height: 60%;
+    width: 40%;
+    border-bottom: 1px solid #000;
+}
+
+.middle-ornament {
+    width: 20%;
+    text-align: center;
+}
+
+
+/* /banner-5 */
+
+
+/* banner-6 */
+
+.banner-wrapper6 {
+    flex-direction: row-reverse;
+}
+
+.banner-wrapper6 .left .left-1 {
+    flex-direction: row-reverse;
+}
+
+.banner-wrapper6 .left .left-1 .right-img img {
+    width: 100%;
+}
+
+.banner-wrapper6 .right {
+    width: 100%;
+}
+
+
+/* /banner-6 */
