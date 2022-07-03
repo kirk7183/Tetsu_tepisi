@@ -246,7 +246,9 @@ img {
     vertical-align: bottom;
 }
 
-
+p {
+    white-space: pre-line;
+}
 /* /group */
 
 
