@@ -1,0 +1,94 @@
+/* Footer */
+
+footer {
+    width: 100%;
+    background: #f1f1f1;
+}
+
+footer p {
+    margin: 0;
+}
+
+.wrapper-footer {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vw;
+}
+
+.time,
+.contact,
+.social-email {
+    /* margin: 0 2vw; */
+    width: 16vw;
+}
+
+.time,
+.contact,
+.social-email p {
+    font-size: 1.2vw;
+}
+
+.working-time,
+.phone,
+.address,
+.facebook,
+.instagram,
+.email {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+    padding: 1vw 0;
+}
+
+.instagram,
+.email {
+    padding-top: 0;
+}
+
+.working-time {
+    align-items: flex-start;
+}
+
+.phone,
+.address,
+.facebook,
+.instagram,
+.email {
+    align-items: center;
+}
+
+.working-time,
+.contact {
+    border-right: 1px solid gray;
+}
+
+.leftIcon {
+    width: 10%;
+}
+
+.leftIcon img {
+    display: block;
+    width: 100%;
+}
+
+.time-info,
+.tel-info,
+.address-info,
+.fb-info,
+.instagram-info,
+.email-info {
+    width: 100%;
+}
+
+.tel-info p,
+.address-info :first-child,
+.address-info :nth-child(2) {
+    display: inline;
+}
+
+
+/* /Footer */

@@ -1,0 +1,23 @@
+/* @import url(https://fonts.googleapis.com/css?family=Raleway); */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@font-face {
+    font-family: 'Sans Serif Book Medium';
+    src: url('/assets/Fonts/SansSerifBookFLF.ttf') format('truetype');
+}
+
+html,
+body {
+    margin: 0;
+    height: fit-content;
+    font-size: 1.7vw;
+    max-width: 2000px;
+}
+
+* {
+    font-family: "Sans Serif Book Medium";
+    box-sizing: border-box;
+}
+
+
+/* font-family: 'Abril Fatface', cursive; */

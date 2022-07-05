@@ -1,0 +1,16 @@
+.banner-1 {
+    width: 65%;
+    padding: 6vw 0;
+    margin: 0 auto;
+    font-size: 1.7vw;
+    text-align: center;
+}
+
+.middle-img {
+    width: 30%;
+    margin: 3vw auto;
+}
+
+.middle-img img {
+    width: 100%;
+}
