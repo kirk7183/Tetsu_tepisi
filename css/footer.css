@@ -5,7 +5,7 @@ footer {
     bottom: 0;
     width: 100%; */
     background: #f1f1f1;
-    border-bottom: 5px solid #808080;
+    border-bottom: 2px solid #000;
 }
 
 footer p {
@@ -32,13 +32,13 @@ footer p {
 .contact,
 .social-email {
     /* margin: 0 2vw; */
-    width: 16vw;
+    width: 18vw;
 }
 
 .time,
 .contact,
 .social-email p {
-    font-size: 1.2vw;
+    font-size: 1.4vw;
 }
 
 .working-time,
@@ -97,6 +97,72 @@ footer p {
 .address-info :first-child,
 .address-info :nth-child(2) {
     display: inline;
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper-footer {
+        font-size: 18px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 0;
+        padding: 3vw 0;
+    }
+    .time,
+    .contact,
+    .social-email {
+        width: 100%;
+    }
+    .time,
+    .contact,
+    .social-email p {
+        font-size: 18px;
+    }
+    .time .leftIcon,
+    .contact .leftIcon {
+        display: none;
+    }
+    .social-email .facebook .leftIcon {
+        width: 2vw;
+    }
+    .social-email .instagram .leftIcon,
+    .social-email .email .leftIcon {
+        width: 3vw;
+    }
+    .working-time,
+    .contact,
+    .social-email {
+        border-right: none;
+        text-align: center;
+    }
+    .facebook,
+    .instagram,
+    .email {
+        flex-direction: column;
+        padding: 1vw 0;
+    }
+    footer p {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .social-email .facebook .leftIcon {
+        width: 3vw;
+    }
+    .social-email .instagram .leftIcon,
+    .social-email .email .leftIcon {
+        width: 5vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .social-email .facebook .leftIcon {
+        width: 5vw;
+    }
+    .social-email .instagram .leftIcon,
+    .social-email .email .leftIcon {
+        width: 7vw;
+    }
 }
 
 

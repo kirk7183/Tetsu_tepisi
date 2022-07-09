@@ -9,7 +9,7 @@
 
 .banner-2 {
     position: relative;
-    margin: 2vw auto;
+    margin: 0 auto 2vw;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 }

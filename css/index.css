@@ -34,6 +34,24 @@ p {
     white-space: pre-line;
 }
 
+.vise {
+    color: #000;
+}
+
+a.d-flex {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg {
+    width: 35px;
+}
+
+svg path {
+    fill: #000;
+}
+
 
 /* /group */
 
@@ -94,6 +112,7 @@ picture {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    align-self: flex-start;
 }
 
 .banner-wrapper2 .left .left-1,
@@ -128,24 +147,23 @@ picture {
     -o-transform: scaleX(-1);
 }
 
-.banner-wrapper2 .left .left-2,
+
+/* .banner-wrapper2 .left .left-2,
 .banner-wrapper5 .left .left-2,
 .banner-wrapper6 .left .left-2 {
     padding: 2vw 0 0;
-}
+} */
 
 .banner-wrapper2 .left .left-3 a p,
 .banner-wrapper5 .left .left-3 a p,
 .banner-wrapper6 .left .left-3 a p {
-    margin-top: 0;
+    margin: 0;
 }
 
-
-/* 
 .banner-wrapper2 .right,
 .banner-wrapper5 .right {
-    width: 90%;
-} */
+    width: 75%;
+}
 
 .banner-wrapper2 .right img,
 .banner-wrapper5 .right img,
@@ -171,7 +189,7 @@ picture {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2vw 0 0;
+    /* padding: 2vw 0 0; */
 }
 
 .banner-wrapper3 .middle-2 .left,
@@ -191,12 +209,16 @@ picture {
 }
 
 div.banner-3 div.middle-3 a p {
-    margin-top: 0;
+    margin: 0;
 }
 
 .banner-wrapper3 .middle-4,
 .banner-wrapper3 .middle-4 img {
     width: 100%;
+}
+
+.banner-3 .middle-3 .d-flex {
+    margin-bottom: 2vw;
 }
 
 
@@ -237,7 +259,7 @@ div.banner-3 div.middle-3 a p {
 }
 
 .banner-wrapper4 .middle-2 {
-    padding: 2vw 0 0;
+    padding: 2vw 0 2vw;
 }
 
 .banner-wrapper4 .middle-2 :first-child {
@@ -249,7 +271,7 @@ div.banner-3 div.middle-3 a p {
 }
 
 .banner-wrapper4 .middle-3 p {
-    margin-bottom: 0;
+    margin: 0;
 }
 
 
@@ -320,8 +342,8 @@ div.banner-3 div.middle-3 a p {
 /* banner-7 */
 
 .banner-7 {
-    border-top: 5px solid gray;
-    border-bottom: 5px solid gray;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
 }
 
 .banner-wrapper7 {
@@ -379,3 +401,168 @@ div.banner-3 div.middle-3 a p {
 
 
 /* /banner-7 */
+
+@media screen and (max-width: 1024px) {
+    main {
+        font-size: 22px;
+    }
+    .banner-wrapper2,
+    .banner-wrapper5,
+    .banner-wrapper6,
+    .banner-wrapper7 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-wrapper2 .right-img,
+    .banner-wrapper5 .right-img,
+    .banner-wrapper6 .right-img {
+        width: 15%;
+    }
+    .banner-wrapper2 .left-line,
+    .banner-wrapper5 .left-line,
+    .banner-wrapper6 .left-line,
+    .banner-wrapper7 .right,
+    .banner-wrapper7 .left {
+        width: 80%;
+    }
+    .banner-wrapper2 .left-3,
+    .banner-wrapper5 .left-3,
+    .banner-wrapper6 .left-3 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner-wrapper2 .right,
+    .banner-wrapper5 .right,
+    .banner-wrapper6 .right {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner-wrapper3 .middle-2 .middle {
+        width: 100%;
+    }
+    .banner-wrapper4 .middle-1 {
+        justify-content: space-between;
+    }
+    .banner-wrapper4 .middle-1 .one {
+        display: none;
+    }
+    .banner-wrapper4 .middle-1 .three {
+        width: 80%;
+    }
+    .banner-wrapper4 .middle-1 .two img {
+        width: 100%;
+    }
+    .banner-wrapper4 .middle-2 {
+        text-align: center;
+    }
+    .banner-wrapper4 .middle-2,
+    .banner-wrapper4 .middle-3 {
+        text-align: center;
+    }
+    .banner-wrapper5 .left {
+        width: 100%;
+    }
+    .banner-wrapper5 .full-width {
+        align-items: center;
+    }
+    .banner-wrapper7 .left {
+        margin: 5vw 0;
+    }
+    .banner-wrapper7 .bottom p {
+        font-size: 18px;
+    }
+    .banner-wrapper7 .bottom .flexLC {
+        justify-content: flex-start;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 943px) {
+    .banner-wrapper7 .bottom .flexLC {
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .banner-wrapper3 .middle-2 .left,
+    .banner-wrapper3 .middle-2 .right {
+        display: none;
+    }
+    .banner-wrapper3 .middle-1 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner-wrapper3 .middle-1 img {
+        width: 25%;
+    }
+    .banner-wrapper3 .middle-2 p {
+        margin-top: 0;
+    }
+    .banner-wrapper7 .top {
+        margin-bottom: 7vw;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    main {
+        font-size: 18px;
+    }
+    .banner-1 .logo-text {
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .banner-1 .logo-text img {
+        width: 65%;
+    }
+    .banner-1 .logo-text .text {
+        font-size: 10vw;
+    }
+    .banner-wrapper2,
+    .banner-wrapper3,
+    .banner-wrapper4,
+    .banner-wrapper5,
+    .banner-wrapper6,
+    .banner-wrapper7 {
+        width: 90%;
+    }
+    .banner-wrapper2 .right,
+    .banner-wrapper5 .right,
+    .banner-wrapper6 .right {
+        width: 100%;
+    }
+    .banner-wrapper7 .left {
+        width: 100%;
+    }
+    .banner-wrapper7 .bottom p {
+        font-size: 16px;
+    }
+    .banner-wrapper2 .right img,
+    .banner-wrapper5 .right img,
+    .banner-wrapper6 .right img {
+        width: 90%;
+    }
+    .banner-wrapper3 .middle-4,
+    .banner-wrapper3 .middle-4 img {
+        width: 95%;
+        margin-left: auto;
+    }
+    .banner-wrapper6 .left .left-1 .right-img img {
+        display: none;
+    }
+    .banner-wrapper7 .bottom .flexLC img {
+        display: none;
+    }
+    .banner-wrapper7 .bottom .flexLC {
+        justify-content: center;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .banner-wrapper6 .left .left-1 {
+        display: none;
+    }
+    .banner-wrapper6 .left .left-2 p {
+        white-space: unset;
+    }
+}
