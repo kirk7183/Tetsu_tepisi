@@ -1,0 +1,87 @@
+.banner-1,
+.wrapper-banner2,
+.banner-2 .wrapper-images,
+.wrapper-banner4 {
+    width: 65%;
+    padding: 5vw 0;
+    margin: 0 auto;
+    font-size: 1.7vw;
+    text-align: center;
+}
+
+.banner-1 {
+    display: flex;
+    align-items: flex-end;
+}
+
+.banner-1 .right-img {
+    width: 10%;
+}
+
+.banner-1 img {
+    display: block;
+    width: 100%;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.headline {
+    color: #857c52;
+    font-weight: 600;
+    margin: 0;
+}
+
+.middle-line {
+    margin: 0 1vw;
+    border-bottom: 1px solid #857c52;
+    width: 20%;
+}
+
+.banner-2 {
+    height: 30vw;
+}
+
+.banner-2,
+.banner-4 {
+    padding: 3vw 0;
+    background: rgba(164, 145, 128, 0.37);
+}
+
+.wrapper-banner2,
+.wrapper-banner4 {
+    border-left: 1px solid #000;
+    text-align: left;
+    padding: 1vw 0 1vw 2vw;
+}
+
+.wrapper-banner2 p,
+.wrapper-banner4 p {
+    font-size: 1.3vw;
+    margin: 0;
+}
+
+.white-space {
+    height: 20vw;
+}
+
+.banner-2 .wrapper-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+}
+
+.banner-2 .wrapper-images picture img {
+    width: 100%;
+}
+
+.wrap-text {
+    margin: 1.5vw 0 1.5vw 2vw;
+}
+
+footer {
+    border-top: 5px solid #808080
+}

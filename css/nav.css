@@ -19,7 +19,7 @@ body {
     box-sizing: border-box;
 } */
 
-#navbarHTML {
+header {
     position: sticky;
     top: 0;
     z-index: 999;
@@ -79,9 +79,10 @@ a {
     font-weight: 600;
 } */
 
-.menu li a:active {
+
+/* .menu li a:active {
     background-color: red;
-}
+} */
 
 .menu li {
     margin: 0 1rem;

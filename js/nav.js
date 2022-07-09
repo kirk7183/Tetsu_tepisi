@@ -1,15 +1,15 @@
 /* navbar for every page */
-var navBar = `<nav class="top-nav">
-<div class="img-wrapper">
+var navBar = `<div class="top-nav">
+<figure class="img-wrapper">
     <a href="/">
         <img src="/assets/images/T-logo-trans.png" alt="Tetsu logo transparent">
     </a>
-</div>
+</figure>
 <input id="menu-toggle" type="checkbox" />
 <label class='menu-button-container' for="menu-toggle">
     <div class='menu-button'></div>
 </label>
-<div class="menu-wrapper">
+<nav class="menu-wrapper">
     <ul class="menu">
         <li>
             <a href="/">Početna</a>
@@ -28,10 +28,11 @@ var navBar = `<nav class="top-nav">
         </li>
 
     </ul>
-</div>
-</nav>`;
+</nav>
+</div>`;
 
-document.getElementById('navbarHTML').innerHTML = navBar;
+// document.getElementById('navbarHTML').innerHTML = navBar;
+document.querySelector("header").innerHTML = navBar;
 
 /* backgroundcolor on current  page */
 

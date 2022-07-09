@@ -6,17 +6,33 @@
     src: url('/assets/Fonts/SansSerifBookFLF.ttf') format('truetype');
 }
 
+* {
+    font-family: "Sans Serif Book Medium";
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
     height: fit-content;
     font-size: 1.7vw;
     max-width: 2000px;
+    /* position: relative; */
+    /* padding-bottom: 200px; */
 }
 
-* {
-    font-family: "Sans Serif Book Medium";
-    box-sizing: border-box;
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+a:active {
+    color: green
 }
 
 
