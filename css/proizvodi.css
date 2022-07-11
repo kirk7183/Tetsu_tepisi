@@ -1,21 +1,95 @@
-.banner-1 {
+/*let vise = gallery.querySelectorAll('.d-flex');
+ vise.onclick = () => {
+     this.root.show(this.index, i - disabledCount)
+ }*/
+
+
+/* group */
+
+.banner-wrapper1 {
     width: 65%;
-    padding: 5vw 0;
+    padding: 6vw 0;
     margin: 0 auto;
-    font-size: 1.7vw;
-    text-align: center;
+    /* font-size: 1.7vw; */
 }
 
-.banner-1 {
+
+/* span {
+    color: #857c52;
+}
+*/
+
+.text-color {
+    color: #857c52;
+}
+
+
+/* .banner-3,
+.banner-5,
+.banner-7 {
+    background: rgba(164, 145, 128, 0.37);
+} */
+
+img {
+    vertical-align: bottom;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.vise {
+    /* font-size: 1.5vw; */
+    color: #000;
+}
+
+a.d-flex {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg {
+    width: 35px;
+}
+
+svg path {
+    fill: #000;
+}
+
+
+/* /group */
+
+
+/* banner-1 */
+
+.top-text {
+    margin: 5vw 0;
     display: flex;
     align-items: flex-end;
+    /* font-size: 1.7vw; */
 }
 
-.banner-1 .right-img {
-    width: 10%;
+
+/* .headline {
+    font-family: 'Abril Fatface', cursive;
+    color: #857c52;
+    font-weight: 400;
+    line-height: 12px;
+    margin: 0;
+} */
+
+.middle-line {
+    margin: 0 1vw;
+    border-bottom: 1px solid #857c52;
+    width: 20%;
 }
 
-.banner-1 img {
+.top-img {
+    width: 8%;
+}
+
+.banner-1 .top-text img {
     display: block;
     width: 100%;
     -webkit-transform: scaleX(-1);
@@ -25,14 +99,57 @@
     transform: scaleX(-1);
 }
 
-.headline {
-    color: #857c52;
-    font-weight: 600;
-    margin: 0;
+.banner-1-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
 }
 
-.middle-line {
-    margin: 0 1vw;
-    border-bottom: 1px solid #857c52;
-    width: 20%;
+.banner-1-bottom .left {
+    width: 50%;
+    /* font-size: 1.3vw; */
 }
+
+.banner-1-bottom .left p:first-child {
+    margin-top: 0;
+}
+
+.banner-1-bottom .hes-gallery {
+    width: 45%;
+    align-self: flex-start;
+}
+
+.banner-1-bottom .hes-gallery .right {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.banner-1-bottom .hes-gallery .right .right-img {
+    width: 100%;
+}
+
+.banner-1-bottom .hes-gallery .right .right-img:nth-child(n+7) {
+    /* hide more then 6 images...because hes.gallery.js need them when we click on "Vise" */
+    display: none;
+}
+
+.banner-1-bottom .hes-gallery .right img {
+    width: 100%;
+}
+
+.hes-gallery .right .right-img img {
+    object-fit: cover;
+    /* content: url('/assets/images/pocetna/desktop/banner5_pic1_ver1.png'); */
+    width: 100%;
+    height: 10vw;
+    /* background-image: url(/assets/images/pocetna/desktop/banner4_pic1_ver1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover; */
+}
+
+
+/* /banner-1 */

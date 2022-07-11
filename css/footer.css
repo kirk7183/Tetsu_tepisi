@@ -4,8 +4,13 @@ footer {
     /* position: absolute;
     bottom: 0;
     width: 100%; */
-    background: #f1f1f1;
+    /* background: #f1f1f1; */
+    background: #161616;
     border-bottom: 2px solid #000;
+}
+
+.text-color2 {
+    color: #fff;
 }
 
 footer p {
@@ -14,14 +19,8 @@ footer p {
 
 .wrapper-footer {
     width: 65%;
-    padding: 1vw 0 0;
     margin: 0 auto;
-}
-
-.wrapper-footer {
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 1vw 0 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -38,7 +37,7 @@ footer p {
 .time,
 .contact,
 .social-email p {
-    font-size: 1.4vw;
+    font-size: 1vw;
 }
 
 .working-time,
@@ -99,9 +98,17 @@ footer p {
     display: inline;
 }
 
+@media screen and (max-width: 1350px) {
+    .time,
+    .contact,
+    .social-email p {
+        font-size: 14px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .wrapper-footer {
-        font-size: 18px;
+        width: 37%;
         justify-content: space-evenly;
         flex-direction: column;
         gap: 0;
@@ -133,6 +140,8 @@ footer p {
     .social-email {
         border-right: none;
         text-align: center;
+        border-bottom: 1px solid #857c52;
+        margin-bottom: 10px;
     }
     .facebook,
     .instagram,
@@ -146,6 +155,9 @@ footer p {
 }
 
 @media screen and (max-width: 700px) {
+    .wrapper-footer {
+        width: 45%;
+    }
     .social-email .facebook .leftIcon {
         width: 3vw;
     }
@@ -156,12 +168,26 @@ footer p {
 }
 
 @media screen and (max-width: 500px) {
+    .wrapper-footer {
+        width: 70%;
+    }
     .social-email .facebook .leftIcon {
         width: 5vw;
     }
     .social-email .instagram .leftIcon,
     .social-email .email .leftIcon {
         width: 7vw;
+    }
+    .time,
+    .contact,
+    .social-email p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .wrapper-footer {
+        width: 85%;
     }
 }
 

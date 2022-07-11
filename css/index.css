@@ -208,6 +208,10 @@ picture {
     text-align: center;
 }
 
+.banner-wrapper3 .middle-2 .middle p {
+    white-space: unset;
+}
+
 div.banner-3 div.middle-3 a p {
     margin: 0;
 }
@@ -295,6 +299,7 @@ div.banner-3 div.middle-3 a p {
 
 .banner-wrapper5 .right {
     width: 38%;
+    align-self: flex-end;
 }
 
 .left-line2,
@@ -333,6 +338,7 @@ div.banner-3 div.middle-3 a p {
 
 .banner-wrapper6 .right {
     width: 100%;
+    align-self: flex-end;
 }
 
 
@@ -365,12 +371,13 @@ div.banner-3 div.middle-3 a p {
     text-transform: uppercase;
     margin-bottom: 5px;
     border-bottom: 1px solid #000;
+    font-weight: 600;
 }
 
 .banner-wrapper7 .bottom p {
     margin: 0;
-    font-size: 1.5vw;
-    font-weight: 600;
+    font-size: 1.2vw;
+    font-weight: 300;
 }
 
 .banner-wrapper7 .right {
@@ -391,7 +398,7 @@ div.banner-3 div.middle-3 a p {
     align-items: flex-end;
     gap: 2%;
     width: 100%;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .flexLC img {
@@ -401,6 +408,40 @@ div.banner-3 div.middle-3 a p {
 
 
 /* /banner-7 */
+
+@media screen and (max-width: 1350px) {
+    main {
+        font-size: 18px;
+    }
+    .banner-wrapper7 {
+        gap: 1.2vw;
+    }
+    .banner-wrapper7 .bottom p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .banner-wrapper3 .middle-2 .middle {
+        width: 60%;
+    }
+    /* .banner-wrapper3 .middle-2 .left,
+    .banner-wrapper3 .middle-2 .right {
+        width: 20%;
+    }
+    .banner-wrapper3 .middle-2 .left {
+        margin-right: auto;
+    }
+    .banner-wrapper3 .middle-2 .right {
+        margin-left: auto;
+    } */
+}
+
+@media screen and (max-width: 1160px) {
+    .banner-wrapper7 .bottom .flexLC {
+        align-items: flex-start;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     main {

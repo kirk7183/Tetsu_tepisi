@@ -1,13 +1,17 @@
 /* @import url(https://fonts.googleapis.com/css?family=Raleway); */
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+/* @font-face {
     font-family: 'Sans Serif Book Medium';
     src: url('/assets/Fonts/SansSerifBookFLF.ttf') format('truetype');
-}
+} */
 
 * {
-    font-family: "Sans Serif Book Medium";
+    /* font-family: "Sans Serif Book Medium"; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
     box-sizing: border-box;
 }
 
@@ -15,7 +19,7 @@ html,
 body {
     margin: 0;
     height: fit-content;
-    font-size: 1.7vw;
+    font-size: 22px;
     max-width: 2000px;
     /* position: relative; */
     /* padding-bottom: 200px; */
@@ -31,8 +35,16 @@ main {
     flex-grow: 1;
 }
 
+.headline {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    color: #857c52;
+    line-height: 12px;
+    margin: 0;
+}
+
 a:active {
-    color: green
+    color: #000;
 }
 
 

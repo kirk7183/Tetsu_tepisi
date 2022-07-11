@@ -1,3 +1,7 @@
+.text-color {
+    color: #857c52;
+}
+
 .banner-1,
 .wrapper-banner2,
 .banner-2 .wrapper-images,
@@ -29,8 +33,10 @@
 }
 
 .headline {
+    font-family: 'Abril Fatface', cursive;
     color: #857c52;
-    font-weight: 600;
+    font-weight: 400;
+    line-height: 12px;
     margin: 0;
 }
 
@@ -38,6 +44,10 @@
     margin: 0 1vw;
     border-bottom: 1px solid #857c52;
     width: 20%;
+}
+
+.text-headline {
+    font-weight: 600;
 }
 
 .banner-2 {
@@ -84,4 +94,14 @@
 
 footer {
     border-top: 5px solid #808080
+}
+
+@media screen and (max-width: 1350px) {
+    .headline {
+        font-size: 22px;
+    }
+    .wrapper-banner2 p,
+    .wrapper-banner4 p {
+        font-size: 18px;
+    }
 }
