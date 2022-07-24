@@ -1,0 +1,248 @@
+/*let vise = gallery.querySelectorAll('.d-flex');
+ vise.onclick = () => {
+     this.root.show(this.index, i - disabledCount)
+ }*/
+
+
+/* group */
+
+
+/* .wrappers {
+    width: 65%;
+    padding: 6vw 0;
+    margin: 0 auto; */
+
+
+/* font-size: 1.7vw; */
+
+
+/* } */
+
+.banner-2,
+.banner-4 {
+    background: rgba(164, 145, 128, 0.37);
+}
+
+
+/* span {
+    color: #857c52;
+}
+*/
+
+.text-color {
+    color: #857c52;
+}
+
+
+/* .banner-3,
+.banner-5,
+.banner-7 {
+    background: rgba(164, 145, 128, 0.37);
+} */
+
+img {
+    vertical-align: bottom;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.vise {
+    /* font-size: 1.5vw; */
+    color: #000;
+}
+
+a.d-flex {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex:hover {
+    opacity: 0.5;
+}
+
+svg {
+    width: 35px;
+}
+
+svg path {
+    fill: #000;
+}
+
+.middle-line {
+    margin: 0 1vw;
+    border-bottom: 1px solid #857c52;
+}
+
+.top-text {
+    margin: 5vw 0;
+    display: flex;
+    align-items: flex-end;
+    /* font-size: 1.7vw; */
+}
+
+
+/* .headline {
+    font-family: 'Abril Fatface', cursive;
+    color: #857c52;
+    font-weight: 400;
+    line-height: 12px;
+    margin: 0;
+} */
+
+.top-img {
+    width: 8%;
+}
+
+.banners .top-text img {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.banners-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.banners-bottom .left {
+    width: 50%;
+    /* font-size: 1.3vw; */
+}
+
+.banners-bottom .left p:first-child {
+    margin-top: 0;
+}
+
+.banners-bottom .hes-gallery {
+    width: 45%;
+    align-self: flex-start;
+}
+
+.banners-bottom .hes-gallery .right {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.banners-bottom .hes-gallery .right .right-img {
+    width: 100%;
+}
+
+.banners-bottom .hes-gallery .right .right-img:nth-child(n+7) {
+    /* hide more then 6 images...because hes.gallery.js need them when we click on "Vise" */
+    display: none;
+}
+
+.banners-bottom .hes-gallery .right img {
+    width: 100%;
+}
+
+.hes-gallery .right .right-img img {
+    object-fit: cover;
+    /* content: url('/assets/images/pocetna/desktop/banner5_pic1_ver1.png'); */
+    width: 100%;
+    height: 10vw;
+    /* background-image: url(/assets/images/pocetna/desktop/banner4_pic1_ver1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover; */
+}
+
+
+/* /group */
+
+
+/* banner-1 */
+
+.banner-1 .middle-line {
+    width: 30%;
+}
+
+
+/* /banner-1 */
+
+
+/* banner-2 */
+
+.banner-2 .middle-line {
+    width: 40%;
+}
+
+
+/* banner-2 */
+
+
+/* banner-3, banner-4 */
+
+.banner-3 .middle-line,
+.banner-4 .middle-line {
+    width: 20%;
+}
+
+
+/* /banner-3, /banner-4 */
+
+
+/* banner-5 */
+
+.banner-5 .middle-line {
+    width: 10%;
+}
+
+
+/* /banner-5 */
+
+@media screen and (max-width: 1024px) {
+    .banners .top-text img {
+        width: 50px;
+    }
+    .banners-bottom {
+        flex-direction: column;
+    }
+    .banners-bottom .left,
+    .banners-bottom .hes-gallery {
+        width: 100%;
+    }
+    .hes-gallery .right .right-img img {
+        height: 15vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .top-text .middle-line {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        font-size: 15px;
+    }
+    .headline {
+        font-size: 22px;
+        line-height: unset;
+    }
+    .top-img,
+    .middle-line {
+        display: none;
+    }
+    .top-text {
+        justify-content: center;
+        line-height: unset;
+    }
+    .left,
+    .left-3 {
+        text-align: center;
+    }
+}
