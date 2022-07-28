@@ -11,16 +11,16 @@
 .banner-1,
 .banner-2 {
     text-align: center;
+    width: 50%;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
 }
 
 .banner-2 {
     position: relative;
-    margin: 0 auto 2vw;
-}
-
-.banner-wrapper2 {
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
 }
 
 .middle-img {
@@ -42,8 +42,12 @@
 }
 
 .wrapper-image {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
 }
 
 footer {
@@ -57,6 +61,14 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+    .d-flex {
+        display: unset;
+        align-items: unset;
+    }
+    .banner-1,
+    .banner-2 {
+        width: 100%;
+    }
     .wrapper-image {
         width: 85%;
     }
